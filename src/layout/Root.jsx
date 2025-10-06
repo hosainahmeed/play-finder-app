@@ -4,14 +4,14 @@ import { StatusBar } from 'react-native';
 import StackLayout from "../layout/StackLayout";
 import { NavigationContainer } from '@react-navigation/native';
 import { PortalProvider } from '@gorhom/portal';
-// import { KeyboardProvider } from 'react-native-keyboard-controller';
+import { KeyboardProvider } from 'react-native-keyboard-controller';
 import GlobalContextProvider from '../providers/GlobalContextProvider';
 
 
 export default function Root() {
     return (
         <PortalProvider>
-            {/* <KeyboardProvider> */}
+            <KeyboardProvider>
                 <GlobalContextProvider>
                     <NavigationContainer>
                         <StatusBar
@@ -21,7 +21,7 @@ export default function Root() {
                         <StackLayout />
                     </NavigationContainer>
                 </GlobalContextProvider>
-            {/* </KeyboardProvider> */}
+            </KeyboardProvider>
         </PortalProvider>
 
     )

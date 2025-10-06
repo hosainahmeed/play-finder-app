@@ -3,6 +3,10 @@ import Login from "../screens/stacks/auth/Login";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ChooseSignUp from "../screens/stacks/auth/ChooseSignUp";
 import Register from "../screens/stacks/auth/Register";
+import VerifyOtp from "../screens/stacks/auth/VerifyOtp";
+import FindEventsOnboarding from "../screens/stacks/onboarding/FindEventsOnboarding";
+import ExploreEventDetailsOnboarding from "../screens/stacks/onboarding/ExploreEventDetailsOnboarding";
+import RegisterWithEase from "../screens/stacks/onboarding/RegisterWithEase";
 
 const Stack = createNativeStackNavigator();
 
@@ -11,6 +15,10 @@ const StackLayout = () => {
     Login: Login,
     ChooseSignUp: ChooseSignUp,
     Register: Register,
+    VerifyOtp: VerifyOtp,
+    FindEventsOnboarding: FindEventsOnboarding,
+    ExploreEventDetailsOnboarding: ExploreEventDetailsOnboarding,
+    RegisterWithEase: RegisterWithEase,
   };
 
   const stacks = Object.keys(screens).map((key) => ({

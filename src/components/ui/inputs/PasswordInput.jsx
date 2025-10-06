@@ -60,8 +60,8 @@ const PasswordInput = ({
       <TouchableOpacity
         style={{
           position: "absolute",
-          right: 4,
-          top: 40,
+          right: 10,
+          top: 45,
         }}
         activeOpacity={0.7}
         onPress={() => setShow(!show)}

@@ -12,11 +12,14 @@ import HeaderSecondary from '../../../components/Shared/HeaderSecondary';
 import TextPrimary from '../../../components/Shared/TextPrimary';
 import ButtonBG from '../../../components/ui/buttons/ButtonBG';
 import { handleSignup } from '../../../handler/serviceSignUp';
+import Navigate from '../../../utils/Navigate';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Register() {
     const { fields, setFields } = RegisterFields();
     const { height } = Dimensions.get("window");
     const { top, bottom } = useSafeAreaInsets();
+    const navigate = useNavigation()
     return (
         <SafeAreaProvider>
             <View
@@ -69,7 +72,10 @@ export default function Register() {
                 <ButtonBG
                     text="Continue"
                     handler={() => {
-                        handleSignup(fields, setFields);
+                        // handleSignup(fields, setFields);
+                        navigate.navigate("Verify", {
+                            params: { phoneNumber: fields[0].value, from: "Register" },
+                        });
                     }}
                 />
             </View>

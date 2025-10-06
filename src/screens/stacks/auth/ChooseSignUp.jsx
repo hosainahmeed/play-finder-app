@@ -54,7 +54,7 @@ const ChooseSignUp = () => {
                 source={chooseIcons.FindIcon}
                 style={styles.cardIcon}
               />
-              <Text style={[styles.cardText, role === "find" && styles.selectedRoleCard]}>Find Events</Text>
+              <Text style={styles.cardText}>Find Events</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
@@ -65,7 +65,7 @@ const ChooseSignUp = () => {
                 source={chooseIcons.ListIcon}
                 style={styles.cardIcon}
               />
-              <Text style={[styles.cardText, role === "list" && styles.selectedRoleCard]}>List Events</Text>
+              <Text style={styles.cardText}>List Events</Text>
             </TouchableOpacity>
           </View>
 
@@ -109,14 +109,11 @@ const styles = StyleSheet.create({
     padding: 15,
     alignItems: "center",
     justifyContent: "center",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 1,
   },
   selectedRoleCard: {
-    backgroundColor: "#0A2463",
+    borderWidth: 0.5,
+    borderColor: "#E0E0E0",
+    backgroundColor: '#E0E0E0',
     color: 'white'
   },
   cardIcon: {
