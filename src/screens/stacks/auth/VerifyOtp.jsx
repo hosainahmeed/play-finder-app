@@ -20,6 +20,7 @@ import { useRoute } from "@react-navigation/native";
 const VerifyOtp = () => {
   const route = useRoute();
   const { phoneNumber, from } = route.params || {};
+  console.log(phoneNumber)
   const { height } = Dimensions.get("window");
   const { top, bottom } = useSafeAreaInsets();
   const navigate = Navigate();
@@ -45,7 +46,7 @@ const VerifyOtp = () => {
       if (from === "forget") {
         navigate("ResetPassword");
       } else {
-        navigate("TrustedServices");
+        navigate("SubscriptionPurchase");
       }
     } catch (error) {
       Alert.alert("Verification Failed", "Please check the code and try again");

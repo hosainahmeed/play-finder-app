@@ -4,15 +4,17 @@ import EyeHide from '../assets/eyeHide.png';
 import Close from '../assets/close.png';
 import ListIcon from '../assets/list-event.png';
 import FindIcon from '../assets/find-event.png';
+import checkmark from "../assets/checkmark.png"
 
 export const otherIcons = {
   ArrowLeft,
   Eye,
   EyeHide,
-  Close
+  Close,
+  checkmark
 };
 
 export const chooseIcons = {
   ListIcon,
-  FindIcon  
+  FindIcon 
 }

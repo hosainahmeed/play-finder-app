@@ -7,6 +7,7 @@ import VerifyOtp from "../screens/stacks/auth/VerifyOtp";
 import FindEventsOnboarding from "../screens/stacks/onboarding/FindEventsOnboarding";
 import ExploreEventDetailsOnboarding from "../screens/stacks/onboarding/ExploreEventDetailsOnboarding";
 import RegisterWithEase from "../screens/stacks/onboarding/RegisterWithEase";
+import SubscriptionPurchase from "../screens/stacks/defults/SubscriptionPurchase"
 
 const Stack = createNativeStackNavigator();
 
@@ -15,7 +16,9 @@ const StackLayout = () => {
     Login: Login,
     ChooseSignUp: ChooseSignUp,
     Register: Register,
-    VerifyOtp: VerifyOtp,
+    Verify: VerifyOtp,
+    SubscriptionPurchase: SubscriptionPurchase,
+    // onboarding
     FindEventsOnboarding: FindEventsOnboarding,
     ExploreEventDetailsOnboarding: ExploreEventDetailsOnboarding,
     RegisterWithEase: RegisterWithEase,
@@ -29,7 +32,7 @@ const StackLayout = () => {
 
   return (
     <Stack.Navigator
-      initialRouteName="Login"
+      initialRouteName="SubscriptionPurchase"
       screenOptions={{ headerShown: false }}
     >
       {stacks?.map((item) => (

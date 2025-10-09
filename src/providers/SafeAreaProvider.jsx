@@ -23,6 +23,7 @@ const withoutLog = [
   "trustedservices",
   "securepayments",
   "realtimebooking",
+  "SubscriptionPurchase"
 ];
 const SafeAreaProvider = ({
   children,
