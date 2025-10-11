@@ -8,6 +8,7 @@ import FindEventsOnboarding from "../screens/stacks/onboarding/FindEventsOnboard
 import ExploreEventDetailsOnboarding from "../screens/stacks/onboarding/ExploreEventDetailsOnboarding";
 import RegisterWithEase from "../screens/stacks/onboarding/RegisterWithEase";
 import SubscriptionPurchase from "../screens/stacks/defults/SubscriptionPurchase"
+import TabLayout from "./TabLayout";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,7 @@ const StackLayout = () => {
     FindEventsOnboarding: FindEventsOnboarding,
     ExploreEventDetailsOnboarding: ExploreEventDetailsOnboarding,
     RegisterWithEase: RegisterWithEase,
+    TabLayout: TabLayout,
   };
 
   const stacks = Object.keys(screens).map((key) => ({

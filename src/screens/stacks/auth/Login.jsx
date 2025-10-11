@@ -17,8 +17,8 @@ import DynamicFields from "../../../utils/DynamicFields";
 
 const Login = () => {
   const { height } = Dimensions.get("window");
-  const { fields, setFields } = LoginFields();
   const { top, bottom } = useSafeAreaInsets();
+  const { fields, setFields } = LoginFields();
   const { setRole } = useGlobalContext();
   const navigate = Navigate();
   return (
@@ -86,12 +86,12 @@ const Login = () => {
           </TouchableOpacity>
         </FlexText>
         <ButtonBG
-          text=" Log In"
+          text="Log In"
           handler={() => {
             handleSignIn(fields, setFields);
             const email = fields[0]?.value + "";
             setRole(email?.includes("user") ? "user" : "service");
-            // navigate("TabLayout");
+            navigate("TabLayout");
           }}
         />
       </View>

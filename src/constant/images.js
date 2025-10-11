@@ -4,17 +4,35 @@ import EyeHide from '../assets/eyeHide.png';
 import Close from '../assets/close.png';
 import ListIcon from '../assets/list-event.png';
 import FindIcon from '../assets/find-event.png';
-import checkmark from "../assets/checkmark.png"
+import checkmark from '../assets/checkmark.png';
+
+// Tab Icons
+import HomeIcon from '../assets/home.png';
+import SearchIcon from '../assets/search.png';
+import ShortlistedIcon from '../assets/shortlisted.png';
+import ProfileIcon from '../assets/profile.png';
 
 export const otherIcons = {
   ArrowLeft,
   Eye,
   EyeHide,
   Close,
-  checkmark
+  checkmark,
 };
 
 export const chooseIcons = {
   ListIcon,
-  FindIcon 
-}
+  FindIcon,
+};
+
+export const TabIcons = {
+  Home: HomeIcon,
+  Search: SearchIcon,
+  Shortlisted: ShortlistedIcon,
+  Profile: ProfileIcon,
+};
+
+import game from '../assets/game.png';
+export const campImages = {
+  game,
+};
