@@ -19,8 +19,9 @@ const TabItem = ({
         justifyContent: "center",
         height: 50,
         borderTopWidth: isFocused ? 2 : 0,
-        borderColor: isFocused ? "#115E59" : "transparent",
-        backgroundColor: isFocused ? "#E6F4F1" : "transparent",
+        borderColor: isFocused ? "#115E59" : "#115E59",
+        backgroundColor: isFocused ? "#E6ECF5" : "white",
+        elevation: isFocused ? 2 : 0
       }}
     >
       <Image

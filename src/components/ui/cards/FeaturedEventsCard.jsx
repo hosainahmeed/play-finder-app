@@ -11,7 +11,7 @@ const FeaturedEventsCard = ({ camp }) => {
   return (
     <View style={styles.card}>
       <View style={styles.imageContainer}>
-        <ClippedImage photoUrl={camp?.photoUrl} width={"100%"} clipId={`clip-path`} />
+        <ClippedImage photoUrl={camp?.photoUrl} width="100%" clipId={`clip-path`} />
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>{camp?.title}</Text>
@@ -57,8 +57,8 @@ const ClippedImage = ({ photoUrl, width, clipId }) => {
 
       <SvgImage
         href={photoUrl}
-        width="100%"
-        height="100%"
+        width={width}
+        height={200}
         preserveAspectRatio="xMidYMid cover"
         clipPath={`url(#${clipId})`}
       />
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     overflow: 'hidden',
     elevation: 1,
-    marginVertical: 10,
+    marginVertical: 5,
     borderWidth: 1,
     borderColor: '#eee',
     padding: 0,

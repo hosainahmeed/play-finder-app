@@ -49,7 +49,7 @@ const Tabbar = ({ state, descriptors, navigation }) => {
             testID={options.tabBarButtonTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{ flex: 1,backgroundColor: "#E6F4F1" }}
+            style={{ flex: 1, backgroundColor: "#fff", elevation: 2 }}
           >
             <TabItem
               route={route.name}

@@ -5,6 +5,7 @@ import Close from '../assets/close.png';
 import ListIcon from '../assets/list-event.png';
 import FindIcon from '../assets/find-event.png';
 import checkmark from '../assets/checkmark.png';
+import profileBg from '../assets/profile-bg.png';
 
 // Tab Icons
 import HomeIcon from '../assets/home.png';
@@ -23,6 +24,10 @@ export const otherIcons = {
 export const chooseIcons = {
   ListIcon,
   FindIcon,
+};
+
+export const IMAGE = {
+  profileBg,
 };
 
 export const TabIcons = {

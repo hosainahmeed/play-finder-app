@@ -34,7 +34,7 @@ const ChooseSignUp = () => {
   };
 
   return (
-    <SafeAreaProvider backButtonText="Sign Up as">
+    <SafeAreaProvider>
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ flexGrow: 1 }}
