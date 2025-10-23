@@ -12,13 +12,15 @@ import HomeIcon from '../assets/home.png';
 import SearchIcon from '../assets/search.png';
 import ShortlistedIcon from '../assets/shortlisted.png';
 import ProfileIcon from '../assets/profile.png';
-
+import categoryBg from '../assets/cat_bg.png';
+import bell from '../assets/bell.png';
 export const otherIcons = {
   ArrowLeft,
   Eye,
   EyeHide,
   Close,
   checkmark,
+  bell
 };
 
 export const chooseIcons = {
@@ -28,6 +30,7 @@ export const chooseIcons = {
 
 export const IMAGE = {
   profileBg,
+  categoryBg,
 };
 
 export const TabIcons = {
