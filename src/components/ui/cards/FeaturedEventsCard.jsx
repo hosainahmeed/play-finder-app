@@ -11,7 +11,7 @@ const FeaturedEventsCard = ({ camp }) => {
   return (
     <View style={styles.card}>
       <View style={styles.imageContainer}>
-        <ClippedImage photoUrl={camp?.photoUrl} width="100%" clipId={`clip-path`} />
+        <ClippedImage photoUrl={camp?.photoUrl} width={310} clipId={`clip-path`} />
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>{camp?.title}</Text>
