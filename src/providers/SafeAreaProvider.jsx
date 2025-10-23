@@ -29,6 +29,7 @@ const SafeAreaProvider = ({
   children,
   backButtonText,
   zeroPadding = false,
+  paddingHorizontalNumber = 20,
 }) => {
   const { top, bottom } = useSafeAreaInsets();
   const navigation = useNavigation();
@@ -56,7 +57,7 @@ const SafeAreaProvider = ({
     >
       <View
         style={{
-          paddingHorizontal: zeroPadding ? 0 : 20,
+          paddingHorizontal: zeroPadding ? 0 : paddingHorizontalNumber,
         }}
       >
         {backButtonText && <BackButton text={backButtonText} />}
