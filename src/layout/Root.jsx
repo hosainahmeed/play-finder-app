@@ -16,7 +16,7 @@ export default function Root() {
                     <NavigationContainer>
                         <StatusBar
                             barStyle={"dark-content"}
-                            backgroundColor={`#FFFFFF`}
+                            backgroundColor={`#E6ECF5`} 
                         />
                         <StackLayout />
                     </NavigationContainer>

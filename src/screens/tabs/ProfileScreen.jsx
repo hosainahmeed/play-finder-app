@@ -28,6 +28,9 @@ export default function ProfileScreen() {
             style={{ width: '100%', height: '100%', borderRadius: 200, overflow: 'hidden' }} />
         </View>
       </View>
+      <View>
+        <UserIcon />
+      </View>
     </SafeAreaProvider>
   )
 }
