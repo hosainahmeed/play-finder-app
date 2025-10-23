@@ -9,6 +9,7 @@ import ExploreEventDetailsOnboarding from "../screens/stacks/onboarding/ExploreE
 import RegisterWithEase from "../screens/stacks/onboarding/RegisterWithEase";
 import SubscriptionPurchase from "../screens/stacks/defults/SubscriptionPurchase"
 import TabLayout from "./TabLayout";
+import { StatusBar } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
